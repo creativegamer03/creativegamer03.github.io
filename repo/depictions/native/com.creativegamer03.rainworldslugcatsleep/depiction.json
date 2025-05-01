@@ -1,6 +1,6 @@
 {
 	"minVersion": "0.1",
-	"headerImage": "https://raw.githubusercontent.com/uchks/repo.me/master/assets/packageicons/fallingbreadtheme.png",
+	"headerImage": "https://raw.githubusercontent.com/uchks/repo.me/master/assets/packageicons/rainworldslugcatsleep",
 	"tintColor": "#22b5f4",
 	"tabs": [
 		{
@@ -21,7 +21,7 @@
 				},
 				{
 					"class": "DepictionMarkdownView",
-					"markdown": "## Falling Bread Respring Logo Theme\nThe Falling Bread GIF meme as a Respring Logo Theme!\nA simple and stupid respring theme.\n\n_A Snowboard Respring theme_"
+					"markdown": "## Rain World Slugcat Sleeping Respring Theme\nThe Rain World "Applying mods" loading spinner as a Respring Logo Theme!\nFelt it was fitting for it to be a respring theme_"
 				},
 				{
 					"class": "DepictionSeparatorView"
@@ -37,7 +37,7 @@
 				},
 				{
 					"title": "Released",
-					"text": "September 16, 2024",
+					"text": "May 1, 2025",
 					"class": "DepictionTableTextView"
 				},
 				{
@@ -86,7 +86,7 @@
 					"class": "DepictionMarkdownView"
 				},
 				{
-					"markdown": "<small style=\"color: #999; margin-top: -8px;\">Released September 16, 2024</small>",
+					"markdown": "<small style=\"color: #999; margin-top: -8px;\">Released May 1, 2025</small>",
 					"useRawFormat": true,
 					"class": "DepictionMarkdownView"
 				}
