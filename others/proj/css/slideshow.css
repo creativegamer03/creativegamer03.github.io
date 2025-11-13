@@ -1,0 +1,112 @@
+/* Slideshow code
+Based from W3 School's example */
+
+* {box-sizing: border-box}
+
+/* Slideshow container */
+.slidehsow-container {
+	max-width: 1000px;
+	max-height: 500px;
+	position: absolute;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.slide {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+.slide img {
+	border-radius: 10px;
+	filter: drop-shadow(0 0 0.5rem #000a);
+}
+
+.slide img:hover {
+	cursor: zoom-in;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: relative;
+	top: 0;
+	width: auto;
+	padding: 16px;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 5px;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	left: 88%;
+	border-radius: 5px;
+}
+
+/* On hover button effects */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text a{
+	color: #090909;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: relative;
+	float: bottom;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	font-weight: 500;
+	text-decoration: none;
+	transition: font-weight 0.6s ease;
+}
+
+.text a:hover{
+	font-weight: 900;
+	transition: font-weight 0.6s ease;
+}
+
+/* Slide progress indicator */
+.dot1, .dot2, .dot3, .dot4 {
+	cursor: pointer;
+	height: 15px; 
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 100%;
+	border: 1px solid #0005;
+	display: inline-block;
+	transition: background-color 0.25s ease;
+	transition: border-radius 0.25s ease;
+	transition: width 0.25s ease;
+}
+
+.active, .dot1:hover, .dot2:hover, .dot3:hover, .dot4:hover {
+	background-color: #717171;
+	border-radius: 30%;
+	width: 20px;
+	transition: background-color 0.25s ease;
+	transition: border-radius 0.25s ease;
+	transition: width 0.25s ease;
+}
+
+/* Fade animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}

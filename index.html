@@ -1,25 +1,77 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>/cg03/ | Home </title>
-        <style>
-            h1{
-                font-family:courier;
-            }
-            body {
-                background:black;
-                color:white;
-            }
-        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>CreativeGamer03</title>
+        <link rel="stylesheet" href="https://unpkg.com/fixedsys-css/css/fixedsys.css">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>/cg03/</h1>
-        <hr/>
-        View permissions set to private. Please wait until the owner has changed the permissions.<br/><br/>
-
-        If you want to access the old site: <a href="/archive/" alt="archive link">go here</a><br/>
-        If you want to access the iOS repo: <a href="/repo/" alt="ios repo link">go here</a><br/>
-        <hr/>
-        <p>(c) 2024 Idk fr if all rights are reserved. <a href="about.html" alt="about.html">About this site.</a>
+        <div class="header">
+            <div id="additional">
+                <p id="c0">llm-model: warning: not required.&gt;&nbsp;&lt;ai-implementation: error: too much.&gt;&nbsp;&lt;ui-update: warning: not broken, yet changed.&gt;</p>
+            </div>
+            <div id="main-header">
+                <p id="c0">&lt;rw-modding: enjoying.&gt;&nbsp;&lt;win-11: not found.&gt;&nbsp;&lt;</p>
+                <p id="c1">Creative</p>
+                <p id="c2">Gamer</p>
+                <p id="c3">0</p>
+                <p id="c4">3</p>
+                <p id="c0">&gt;&nbsp;&lt;archlinux: found.&gt;&nbsp;&lt;wphone8.1: still alive&gt;</p>
+            </div>
+            <div id="additional">
+                <p id="c0">&lt;silksong: real&gt;&nbsp;&lt;hl3: not found&gt;&nbsp;&lt;info: warning: ai-gen.&gt;&nbsp;&lt;life: running.&gt;</p>
+            </div>
+        </div>
+        <div class="main-ui">
+            <div class="card" id="github" tabindex="0" onkeydown="event.code === 'Enter' && this.click();">
+                <div class="card-icon">
+                    <img src="/card-icons/main-repo.png" width="72">
+                </div>
+                <div class="card-details">
+                    <p>My GitHub</p>
+                </div>
+                <a href="https://github.com/creativegamer03/" hidden></a>
+            </div>
+            <div class="card" id="ios" tabindex="0" onkeydown="event.code === 'Enter' && this.click();">
+                <div class="card-icon">
+                    <img src="/card-icons/jailbreak.png" width="72">
+                </div>
+                <div class="card-details">
+                    <p>iOS Repo</p>
+                </div>
+                <a href="/repo" hidden></a>
+            </div>
+            <div class="card" id="rw" tabindex="0" onkeydown="event.code === 'Enter' && this.click();">
+                <div class="card-icon">
+                    <img src="/card-icons/rw.png" width="72">
+                </div>
+                <div class="card-details">
+                    <p>My Rain World Mods</p>
+                </div>
+                <a href="/rwmods" hidden></a>
+            </div>
+            <div class="card" id="more" tabindex="0" onkeydown="event.code === 'Enter' && this.click();">
+                <div class="card-icon">
+                    <img src="/card-icons/more.png" width="72">
+                </div>
+                <div class="card-details">
+                    <p>Other Stuff</p>
+                </div>
+                <a href="/others" hidden></a>
+            </div>
+            <div class="card" id="info" tabindex="0" onkeydown="event.code === 'Enter' && this.click();">
+                <div class="card-icon">
+                    <img src="/card-icons/info.png" width="72">
+                </div>
+                <div class="card-details">
+                    <p>About</p>
+                </div>
+                <a href="/about.html" hidden></a>
+            </div>
+        </div>
+        <div class="footer"></div>
     </body>
+    <script src="/static/scripts/postscripts.js"></script>
 </html>

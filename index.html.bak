@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>/cg03/ | Home </title>
+        <style>
+            h1{
+                font-family:courier;
+            }
+            body {
+                background:black;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>/cg03/</h1>
+        <hr/>
+        View permissions set to private. Please wait until the owner has changed the permissions.<br/><br/>
+
+        If you want to access the old site: <a href="/archive/" alt="archive link">go here</a><br/>
+        If you want to access the iOS repo: <a href="/repo/" alt="ios repo link">go here</a><br/>
+        <hr/>
+        <p>(c) 2024 Idk fr if all rights are reserved. <a href="about.html" alt="about.html">About this site.</a>
+    </body>
+</html>

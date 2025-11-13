@@ -1,0 +1,131 @@
+body {
+	background-image: url("../bg.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-family: Circular Std Light;
+}
+
+hr {
+	border: 2px solid #0008;
+	border-radius: 3px;
+}
+
+.title {
+	font-family: Circular Std Black;
+	color: black;
+	text-transform: uppercase;
+	font-size: 250%;
+	text-align: center;
+}
+.desc {
+	font-family: Circular Std Light;
+	color: black;
+	font-size: 125%;
+	text-align: center;
+}
+.section {
+	font-family: Circular Std Bold;
+	color: black;
+	font-size: 150%;
+}
+.sec_desc {
+	font-family: Circular Std;
+	color: black;
+	font-size: 100%;
+}
+.sec_desc ol{
+	font-size: 100%;
+}
+.sec_desc ul{
+	font-size: 100%;
+}
+#source {
+	padding: 0 !important;
+}
+.content {
+	overflow: auto;
+}
+.content div {
+	padding: 2.5%;
+}
+.main {
+	background-color: #fffa;
+	float: center;
+	margin: auto;
+	width: 80%;
+	backdrop-filter: saturate(180%) blur(10px);
+	filter: drop-shadow(0 0 10px black);
+}
+#round1 {
+	border: 0px;
+	border-radius: 20px;
+}
+#round2 {
+	background-color: #FFF1;
+	border: 0px;
+	border-radius: 15px;
+	backdrop-filter: drop-shadow(0 0 3px black);
+}
+.slideshow {
+	background-color: yellow;
+	margin: auto;
+	width: 50%;
+}
+.table-of-contents {
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	border-width: 2px;
+	border-color: black;
+}
+
+.table-of-contents a {
+	font-family: Circular Std Bold;
+	font-size: 150%;
+	color: #555;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 60px;
+	width: 100%;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+}
+
+.footer {
+	background-color: #FFFFFFAF;
+	position: sticky;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1px !important;
+	height: 0%;
+	font-family: Circular Std Book;
+	font-size: 100%;
+	color: #333;
+	text-align: center;
+	border-radius: 5px;
+	backdrop-filter: blur(5px);
+	filter: drop-shadow(0 0 5px black)
+}
+#footer_text {
+	margin: 1em auto;
+	overflow-wrap: break-word;
+}
+
+/* Uncomment this for debug purposes */
+/*
+.debugInfo {
+	color: white;
+}
+*/
