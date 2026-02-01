@@ -1,0 +1,14 @@
+<repo>
+    <footerlinks>
+        <link>
+            <name>I don't use Twitter/X a lot, but you can follow me there if you want.</name>
+            <url>https://x.com/Glomer03</url>
+            <iconclass>fa-brands fa-x-twitter</iconclass>
+        </link>
+        <link>
+            <name>Made with this depiction template</name>
+            <url>https://github.com/uchks/repo.me</url>
+            <iconclass>fa-solid fa-thumbs-up</iconclass>
+        </link>
+    </footerlinks>
+</repo>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CG03 Utility</title>
+        <link rel="stylesheet" href="/static/styles/bios.css">
+        <link rel="preload" href="/static/fonts/Px437_SperryPC_8x16.ttf" as="font">
+    </head>
+    <body>
+        <div class="main-ui">
+            <div class="header-title">
+                <p>CG03 Utility - Copyright (C) 3226 Ghealy Tech Innovations, Inc.</p>
+            </div>
+            <div class="the-stuff">
+                <div class="header-tabs">
+                    <span state="1">About</span>
+                    <span state="0">Credits</span>
+                    <!--
+                    <span>Security</span>
+                    <span>Boot</span>
+                    <span>Save & Exit</span>
+                    -->
+                </div>
+                <div class="main-layout">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="labels" id="about" state="1">
+                                    <ul>
+                                        <li class="info-text">Website Version</li>
+                                        <li class="info-text">Local Date</li>
+                                        <li class="info-text">Local Time</li>
+                                        <li class="gap">------------</li>
+                                        <li class="info-text">Last Updated</li>
+                                        <li class="info-text">Client Browser</li>
+                                        <li class="info-text">Browser Version</li>
+                                        <li class="info-text">Client OS Version</li>
+                                    </ul>
+                                </div>
+                                <div class="labels" id="credits" state="0">
+                                    <ul>
+                                        <li class="info-text">Credits for these:</li>
+                                        <li class="link-text" id="platformjs">platform.js</li>
+                                        <li class="link-text" id="sperryfont">SperryPC font</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="values" id="about" state="1">
+                                    <ul>
+                                        <li class="info-text">26.01.31.1</li>
+                                        <li class="info-text" id="date">[Thu 01/01/1970]</li>
+                                        <li class="info-text" id="time">[00:00:00]</li>
+                                        <li class="gap">--------------</li>
+                                        <li class="info-text">Sun 01/02/2026 23:31:49</li>
+                                        <li class="info-text" id="browser-name"></li>
+                                        <li class="info-text" id="browser-version"></li>
+                                        <li class="info-text" id="os"></li>
+                                    </ul>
+                                </div>
+                                <div class="values" id="credits" state="0"></div>
+                            </td>
+                            <td>
+                                <div class="description">
+                                    <!-- Description goes here -->
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="labels" id="about" state="1">
+                                    <ul>
+                                        <li class="link-text" id="website" state="0">About Site</li>
+                                        <li class="link-text" id="github" state="0">GitHub</li>
+                                        <li class="link-text" id="reddit" state="0">Reddit</li>
+                                        <li class="link-text" id="discord" state="0">Discord</li>
+                                        <li class="link-text" id="bluesky" state="0">Bluesky</li>
+                                        <li class="link-text" id="youtube" state="0">YouTube channel</li>
+                                    </ul>
+                                </div>
+                                <div class="labels" id="credits" state="0"></div>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <div class="keys">
+                                    <ul>
+                                        <li>&#27;&#26;: Switch Tab</li>
+                                        <li>&#24;&#25;: Select Item</li>
+                                        <li>Enter: Select</li>
+                                        <li>F4: Return to menu</li>
+                                        <li>F5: Refresh</li>
+                                        <li>F11: Fullscreen Mode</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footer" id="version">
+                    <p>Version 5.28.1984. Copyright (C) 3226 Ghealy Tech Innovations, Inc.</p>
+                </div>
+                <div class="footer">
+                    <p>ZY</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="/static/scripts/bios.js"></script>
+    <script type="text/javascript" src="/static/scripts/platform.js"></script>
+</html>

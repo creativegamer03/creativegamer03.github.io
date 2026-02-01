@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CreativeGamer03's Repo</title>
+		<link rel="stylesheet" href="index.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<center>
+			<h1>CreativeGamer03's Repo</h1>
+			<button class="repo-button" id="cydia" onclick="location.href='cydia://url/https://cydia.saurik.com/api/share#?source=https://creativegamer03.github.io/repo/';">Add to Cydia</button><br/>
+			<button class="repo-button" id="installer" onclick="location.href='installer://add/https://creativegamer03.github.io/repo/';">Add to Installer</button><br/>
+			<button class="repo-button" id="sileo" onclick="location.href='sileo://source/https://creativegamer03.github.io/repo/';">Add to Sileo</button><br/>
+			<button class="repo-button" id="zebra" onclick="location.href='zbra://sources/add/https://creativegamer03.github.io/repo/';">Add to Zebra</button><br/>
+		</center>
+		<div id="repos">
+			<div id="repo-packages"></div>
+		</div>
+		<script type="text/javascript">
+// setting some vars
+var array = [];
+var packages = [];
+var package_dict = {};
+var packages_div = document.getElementById('repo-packages');
+
+// filter function
+function inArray(str) {
+	let exclude = ['Filename', 'Depiction', 'SileoDepiction', 'SHA1', 'SHA512'];
+	return !exclude.includes(str);
+}
+
+// convert function
+function formatBytes(a, b = 2) {
+	if ( ! + a )
+		return "0 Bytes";
+	const c = 0 > b ? 0 : b , d = Math.floor(Math.log(a) / Math.log(1024));
+	return `${parseFloat((a / Math.pow(1024, d)).toFixed(c))} ${["Bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"][d]}`
+}
+
+// getting Packages content:
+fetch ('Packages')
+	.then((res) => res.text())
+	.then((text) => {
+		array = text.split('\n');
+		
+		for (let str of array) {
+			if (str == '') {
+				packages.push(package_dict);
+				package_dict = {};
+			} else {
+				package_dict[str.split(/:\s/gm)[0]] = str.split(/:\s/gm)[1];
+			}
+		}
+		
+		for (let package_ of packages) {
+			const repo_card = document.createElement("span");
+			repo_card.setAttribute("class", "repo-card");
+			
+			var info_card;
+			var extra_info = [];
+			
+			for (let key of Object.keys(package_).filter(inArray)) {
+				if (['Name', 'Version', 'Section', 'Author', 'Architecture', 'Description'].includes(key)) {
+					info_card = document.createElement("p");
+					info_card.classList.add('info-card');
+				
+					info_card.setAttribute("id", key.toLowerCase());
+					info_card.innerHTML = package_[key];
+					repo_card.appendChild(info_card);
+				} else if (key == 'Icon') {
+					info_card = document.createElement("img");
+					info_card.setAttribute("src", package_[key]);
+					info_card.setAttribute("id", key.toLowerCase());
+					info_card.setAttribute("width", "64");
+					info_card.setAttribute("height", "64");
+					repo_card.appendChild(info_card);
+				} else {
+					extra_info.push(key);
+				}
+			}
+			
+			if (extra_info !== []) {
+				info_card = document.createElement("div");
+				info_card.classList.add('info-card');
+				info_card.setAttribute("id", "extra-info");
+				
+				for (let extrainfo of extra_info) {
+					if (extrainfo == 'Size') {
+						var extrainfo_card = document.createElement("p");
+						extrainfo_card.setAttribute("id", extrainfo.toLowerCase());
+						extrainfo_card.innerHTML = formatBytes(package_[extrainfo]);
+						info_card.appendChild(extrainfo_card);
+					} else {
+						var extrainfo_card = document.createElement("p");
+						extrainfo_card.setAttribute("id", extrainfo.toLowerCase());
+						extrainfo_card.innerHTML = package_[extrainfo];
+						info_card.appendChild(extrainfo_card);
+					}
+				}
+				
+				repo_card.appendChild(info_card);
+			}
+			
+			packages_div.appendChild(repo_card);
+		}
+	})
+	.catch((e) => console.error(e));
+
+		</script>
+		<div class="footer">
+			made from <a class="btn btn-sm btn-default" href="https://github.com/uchks/repo.me">repo.me</a> by uchks!
+		</div>
+	</body>
+</html>

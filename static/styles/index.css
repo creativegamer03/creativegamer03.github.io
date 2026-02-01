@@ -1,0 +1,105 @@
+@font-face {
+	font-family: SperryPC;
+	src: url(/static/fonts/Px437_SperryPC_8x16.ttf);
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: SperryPC;
+}
+
+body {
+	background-color: black;
+	color: white;
+}
+
+::selection {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+div.main-ui {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+}
+
+div.main-layout {
+	display: flex;
+	flex-direction: column;
+	background-color: blue;
+	min-width: 30%;
+	max-width: min-content;
+	margin: auto;
+}
+
+div.menu-table {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+div.menu-table table {
+	width: 98%;
+	height: 95%;
+	border: 2px solid white;
+}
+
+div.menu-table tbody.header td {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5rem;
+	border-bottom: 1px solid white;
+}
+
+div.menu-table tbody.the-stuff td {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+div.menu-table tbody.footer td {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5rem;
+	border-top: 1px solid white;
+}
+
+div.menu-table tr.pad {
+	height: 0.3rem;
+}
+
+p {
+	margin: 0; padding: 0;
+	width: fit-content;
+}
+
+div.menu-table tr:not(.pad)[state="1"] p, div.menu-table tr:not(.pad):hover p {
+	background-color: black;
+	color: white;
+}
+
+div.boot-img {
+	display: flex;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+div.boot-img img {
+	width: min-content;
+    height: min-content;
+}

@@ -1,0 +1,36 @@
+Package: com.creativegamer03.fallingbreadtheme
+Architecture: iphoneos-arm64
+Version: 1.0.0
+Section: Themes
+Maintainer: CreativeGamer03
+Filename: ./debians/com.creativegamer03.fallingbreadtheme_1.0.0_iphoneos-arm64.deb
+Size: 468452
+MD5sum: f6d9ad9d0e9d95f7c10017d48d073458
+SHA1: b031795755b226536fb0ab90e5a7179c4754b55d
+SHA256: c7dc9e84b73e93ac492ad629c2cf736e2a23a541095e283518498742d5556d16
+SHA512: e53a5cb83c8bb24e01cc43f4d0a764e9b79c4c64523b98399ed60761ecb433d53bc597225f3a900a0a3f5a10ea4b4a5aa040349184f2e7347bcd12744d8fae7f
+Description: The Falling Bread GIF meme as a Respring Logo!
+Depiction: https://creativegamer03.github.io/repo/depictions/web/?p=com.creativegamer03.fallingbreadtheme
+SileoDepiction: https://creativegamer03.github.io/repo/depictions/native/com.creativegamer03.fallingbreadtheme/depiction.json
+Icon: https://creativegamer03.github.io/repo/assets/repo/PackageIcons/fallingbreadtheme.png
+Name: Falling Bread Respring Logo Theme
+Author: CreativeGamer03
+
+Package: com.creativegamer03.rainworldslugcatsleep
+Architecture: iphoneos-arm64
+Version: 1.0.0
+Section: Themes
+Maintainer: CreativeGamer03
+Filename: ./debians/com.creativegamer03.rainworldslugcatsleep_1.0.0_iphoneos-arm64.deb
+Size: 63996
+MD5sum: 50e3af02e16711c435b7a39f53325451
+SHA1: b9e6d34f366e5580377cfada5abf55b0f3b70b27
+SHA256: c1bf4f6ade16f98822331a645ca59f3e8e9cbf02ef12b8084727e886c14599f5
+SHA512: e2a906774e429cbfea24fa902bab394f2bf261992de5072d7f861c188f7d9f2f2507d465e483517bdf71155029a24a604f05d19496f7cec36b9afae538aba93d
+Description: The slugcat from Rain World sleeping as a Respring theme! It's the same animation from the Remix menu's mod applying loader.
+Depiction: https://creativegamer03.github.io/repo/depictions/web/?p=com.creativegamer03.rainworldslugcatsleep
+SileoDepiction: https://creativegamer03.github.io/repo/depictions/native/com.creativegamer03.rainworldslugcatsleep/depiction.json
+Icon: https://creativegamer03.github.io/repo/assets/repo/PackageIcons/rainworldslugcatsleep.png
+Name: Rain World Slugcat Sleep Respring Theme
+Author: CreativeGamer03
+

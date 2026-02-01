@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CreativeGamer03</title>
+        <link rel="preload" href="/static/fonts/Px437_SperryPC_8x16.ttf" as="font" type="font/ttf">
+        <link rel="stylesheet" href="/static/styles/index.css">
+    </head>
+    <body>
+        <div class="boot-img">
+            <img src="/static/assets/boot.png">
+        </div>
+        <div class="main-ui" style="display: none;">
+            <div class="main-layout">
+                <div class="menu-table">
+                    <table>
+                        <tbody class="header">
+                            <td>Please select site section:</td>
+                        </tbody>
+                        <tbody class="the-stuff">
+                            <tr class="pad">
+                                <td></td>
+                            </tr>
+                            <tr id="github" state="1">
+                                <td><p>UEFI: GitHub Repo</p></td>
+                            </tr>
+                            <tr id="ios" state="0">
+                                <td><p>UEFI: iOS Tweaks Repo</p></td>
+                            </tr>
+                            <tr id="rw" state="0">
+                                <td><p>UEFI: Rain World Mods</p></td>
+                            </tr>
+                            <tr id="others" state="0">
+                                <td><p>others (P2: GENERIC SSD 512GB)</p></td>
+                            </tr>
+                            <tr id="about" state="0">
+                                <td><p>Site Information</p></td>
+                            </tr>
+                            <tr class="pad">
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tbody class="footer">
+                            <td>
+                                <span>&#0024; and &#0025; to move selection</span>
+                                <span>ENTER to visit site section</span>
+                                <!-- <span>ESC to boot using defaults</span> -->
+                            </td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="/static/scripts/bootmenu.js"></script>
+</html>

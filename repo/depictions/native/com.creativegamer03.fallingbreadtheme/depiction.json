@@ -1,0 +1,98 @@
+{
+	"minVersion": "0.1",
+	"headerImage": "https://raw.githubusercontent.com/uchks/repo.me/master/assets/packageicons/fallingbreadtheme.png",
+	"tintColor": "#22b5f4",
+	"tabs": [
+		{
+			"tabname": "Details",
+			"views": [
+				{
+					"screenshots": [
+						{
+							"accessibilityText": "Snowboard",
+							"url": "https://creativegamer03.github.io/repo/depictions/web/com.creativegamer03.fallingbreadtheme/screenshots/snowboard.png"
+						},
+						{
+							"accessibilityText": "Demonstration",
+							"url": "https://creativegamer03.github.io/repo/depictions/web/com.creativegamer03.fallingbreadtheme/screenshots/demo.gif"
+						}
+					],
+					"class": "DepictionScreenshotsView"
+				},
+				{
+					"class": "DepictionMarkdownView",
+					"markdown": "## Falling Bread Respring Logo Theme\nThe Falling Bread GIF meme as a Respring Logo Theme!\nA simple and stupid respring theme.\n\n_A Snowboard Respring theme_"
+				},
+				{
+					"class": "DepictionSeparatorView"
+				},
+				{
+					"title": "Latest Version",
+					"class": "DepictionHeaderView"
+				},
+				{
+					"title": "Version",
+					"text": "1.0.0",
+					"class": "DepictionTableTextView"
+				},
+				{
+					"title": "Released",
+					"text": "September 16, 2024",
+					"class": "DepictionTableTextView"
+				},
+				{
+					"title": "Price",
+					"text": "FREE",
+					"class": "DepictionTableTextView"
+				},
+				{
+					"title": "Developer",
+					"text": "CreativeGamer03",
+					"class": "DepictionTableTextView"
+				},
+				{
+					"title": "Website",
+					"action": "https://creativegamer03.github.io/",
+					"class": "DepictionTableButtonView"
+				},
+				{
+					"title": "Use This Template",
+					"action": "https://github.com/uchks/repo.me",
+					"class": "DepictionTableButtonView"
+				},
+				{
+					"spacing": 16,
+					"class": "DepictionSpacerView"
+				},
+				{
+					"spacing": 20,
+					"class": "DepictionSpacerView"
+				}
+			],
+			"class": "DepictionStackView"
+		},
+		{
+			"tabname": "Changelog",
+			"views": [
+				{
+					"title": "1.0.0",
+					"useBoldText": true,
+					"useBottomMargin": true,
+					"class": "DepictionSubheaderView"
+				},
+				{
+					"markdown": "\t\n\u2022 Initial release",
+					"useSpacing": false,
+					"class": "DepictionMarkdownView"
+				},
+				{
+					"markdown": "<small style=\"color: #999; margin-top: -8px;\">Released September 16, 2024</small>",
+					"useRawFormat": true,
+					"class": "DepictionMarkdownView"
+				}
+			],
+			"class": "DepictionStackView"
+		}
+	],
+	"class": "DepictionTabView"
+}

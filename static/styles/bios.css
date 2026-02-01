@@ -1,0 +1,206 @@
+@font-face {
+	font-family: SperryPC;
+	src: url(/static/fonts/Px437_SperryPC_8x16.ttf);
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: SperryPC;
+}
+
+body {
+	background-color: darkblue;
+	color: white;
+}
+
+p {
+    padding: 0;
+    margin: 1px;
+}
+
+div.main-ui {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+div.header-title, div.footer {
+    display: flex;
+    justify-content: center;
+}
+
+div.header-title::selection {
+    background-color: white;
+    color: darkblue;
+}
+
+div.footer#version::selection {
+    background-color: gray;
+    color: darkblue;
+}
+
+div.footer::selection {
+    background-color: white;
+    color: darkblue;
+}
+
+div.header-tabs {
+    margin-left: 2rem;
+    display: flex;
+    width: max-content;
+    color: gray;
+}
+
+div.header-tabs::selection, div.header-tabs span[state="1"]::selection {
+    background-color: darkblue;
+    color: gray;
+}
+
+div.header-tabs:hover::selection, div.header-tabs span[state="0"]::selection {
+    background-color: gray;
+    color: darkblue;
+}
+
+div.header-tabs span {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+div.header-tabs span:hover, div.header-tabs span[state="1"] {
+    background-color: gray;
+    color: darkblue;
+}
+
+div.main-layout {
+    height: 100%;
+    padding-top: 0.5rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-bottom: 0.5rem;
+    background-color: gray;
+    color: darkblue;
+}
+
+div.main-layout::selection {
+    background-color: darkblue;
+    color: gray;
+}
+
+div.main-layout table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    border: 2px solid darkblue;
+}
+
+div.the-stuff {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+div.main-layout td {
+    border: 0;
+    vertical-align: top;
+    width: 33%;
+    height: 50%;
+}
+
+div.main-layout table#info-table:first-child {
+    margin-top: 0.5rem;
+}
+
+div.main-layout table#info-table, div.main-layout table#info-table td {
+    border: 0;
+}
+
+div.main-layout td:has(div.description) {
+    border: 0;
+    border-left: 2px solid darkblue !important;
+}
+
+div.description {
+    padding-top: 0.5rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+div.main-layout td:has(div.keys) {
+    border: 0 !important;
+    border-top: 2px solid darkblue !important;
+    border-left: 2px solid darkblue !important;
+}
+
+div.keys {
+    padding-top: 0.5rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+div.keys ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+div.footer#version {
+    justify-content: center;
+    color: gray;
+}
+
+div.footer {
+    justify-content: end;
+}
+
+div.labels, div.values {
+    padding-top: 0.5rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+div.labels ul, div.values ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+div.labels li, div.values li, div.keys li, div.description li {
+    margin-top: 0.5rem;
+}
+
+li.info-text {
+    list-style-type: none;
+    color: black;
+}
+
+li.link-text {
+    list-style-type: none;
+    padding-left: 1em;
+    text-indent: -2em;
+    width: fit-content;
+}
+
+li.link-text::before {
+    padding-right: 0.5em;
+    content: "\10";
+}
+
+li.link-text:hover, li.link-text[state="1"] {
+    color: white;
+}
+
+li.gap {
+    list-style-type: none;
+    color: gray;
+}
+
+div#credits[state="0"], div#about[state="0"] {
+    display: none;
+}
+
+div#credits[state="1"], div#about[state="1"] {
+    display: unset;
+}

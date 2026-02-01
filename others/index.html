@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CreativeGamer03</title>
+        <link rel="preload" href="/static/fonts/Px437_SperryPC_8x16.ttf" as="font" type="font/ttf">
+        <link rel="stylesheet" href="/static/styles/grub.css">
+    </head>
+    <body>
+        <div class="boot-img">
+            <img src="/static/assets/boot.png">
+        </div>
+        <div class="main-ui" style="display: none;">
+            <div class="menu-text">
+                <span>CG03 Menu version 1.0</span>
+            </div>
+            <div class="menu-table">
+                <table>
+                    <tbody>
+                        <tr class="pad">
+                            <td></td>
+                        </tr>
+                        <tr id="archives" state="1">
+                            <td><span>&#xa0;</span> Archives</td>
+                        </tr>
+                        <tr id="projects" state="0">
+                            <td><span>&#xa0;</span> Simple Projects</td>
+                        </tr>
+                        <tr id="return" state="0">
+                            <td><span>&#xa0;</span> Return to boot menu</td>
+                        </tr>
+                        <tr class="pad">
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="menu-text">
+                <span>Use the &#0024; and &#0025; keys to select which is highlighted.</span>
+                <span>Press enter to visit the selected hyperlink. Editing the entries,</span>
+                <span>as well as command-line access, are currently disabled.</span>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="/static/scripts/grub.js"></script>
+</html>

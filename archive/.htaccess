@@ -1,0 +1,2 @@
+ErrorDocument 404 http://win32-user.42web.io/archive/404.html
+DirectoryIndex index.php index.html index.htm

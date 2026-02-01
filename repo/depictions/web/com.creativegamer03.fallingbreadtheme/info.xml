@@ -1,0 +1,44 @@
+<package>
+	<id>com.creativegamer03.fallingbreadtheme</id>
+	<name>Falling Bread GIF Respring Logo Theme</name>
+	<version>1.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+		</firmware>
+	</compatibility>
+	<dependencies>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>The Falling Bread GIF meme as a Respring Logo theme!</description>
+		<description>A simple and stupid Respring theme.</description>
+		<!-- <description><![CDATA[
+		You can also have<br/> 
+		a multi-line item.
+		]]>
+		</description> -->
+	</descriptionlist>
+	<screenshots>
+		<screenshot>
+			<description>Snowboard</description>
+			<image>snowboard.png</image>
+		</screenshot>		
+		<screenshot>
+			<description>Demonstration</description>
+			<image>demo.gif</image>
+		</screenshot>		
+	</screenshots>
+	<changelog>
+		<change>Initial release</change>
+		<!-- <change>It has feature 1</change>
+		<change>It has feature 2</change> -->
+	</changelog>
+	<links>
+		<link>
+			<name>/r/jailbreak</name>
+			<url>https://www.reddit.com/r/jailbreak</url>
+			<iconclass>fa fa-reddit</iconclass>
+		</link>
+	</links>
+</package>
