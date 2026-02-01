@@ -1,0 +1,111 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.main-ui {
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Header */
+.header #main-header {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: black;
+	font-family: fixedsys;
+	font-size: 48px;
+	justify-content: center;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.header #additional {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: black;
+	font-family: fixedsys;
+	font-size: 48px;
+	justify-content: center;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.header p {
+	padding: 0;
+	margin: 0;
+}
+
+#c0 { color: #ffffff1a; text-shadow: #ffffff2f 0 0 10px; }
+#c1 { color: #00a2e8ff; text-shadow: #00a2e8af 0 0 10px; }
+#c2 { color: #22b14cff; text-shadow: #22b14caf 0 0 10px; }
+#c3 { color: #ff7f27ff; text-shadow: #ff7f27af 0 0 10px; }
+#c4 { color: #3f48ccff; text-shadow: #3f48ccaf 0 0 10px; }
+
+/* Card styles */
+.card {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	align-items: center;
+	padding: 10px;
+	border-radius: 10px;
+	height: auto;
+	width: 75%;
+	gap: 20px;
+	cursor: pointer;
+}
+
+.card:hover, .card:focus { background-color: white; }
+.card:hover * , .card:focus * { color: black; font-weight: bold; }
+.card:hover img, .card:focus img { filter: invert(1); }
+.card:hover div:has(p)::after, .card:focus div:has(p)::after { content: ">"; font-size: 50px; }
+
+.card-details {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	font-family: monospace;
+	font-size: 20px;
+	width: 100%;
+}
+
+/* Others */
+img#loader {
+	filter: brightness(0) saturate(100%) invert(62%) sepia(31%) saturate(5285%) hue-rotate(79deg) brightness(116%) contrast(126%);
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	color: black;
+	width: 100%;
+	margin-left: 12px;
+	margin-bottom: 12px;
+	color: #00ff00;
+	font-family: fixedsys;
+}

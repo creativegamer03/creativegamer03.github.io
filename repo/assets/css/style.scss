@@ -1,0 +1,255 @@
+---
+---
+@import "{{ site.theme }}";
+html {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.01);
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.repo-button {
+	border-radius: 5px;
+	font-size: 15px;
+	color: white;
+	padding: 10px;
+	margin-top: 2px;
+	margin-bottom: 3px;
+	border-style: none;
+	cursor: pointer;
+	font-family: sans-serif;
+	filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
+	transition: filter 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.repo-button:before {
+	content: '+ ';
+}
+
+.repo-button:hover {
+	transform: translateY(-5px);
+	filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+.repo-button:active {
+	transform: translateY(0px);
+	filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
+}
+
+#cydia {
+	background-image: linear-gradient(90deg, #C28E79, #714824, #C28E79);
+	background-size: 200%;
+	background-position: 100%;
+	transition: background-position 0.2s ease-out;
+}
+
+#cydia:hover {
+	background-position: 0%;
+}
+
+#installer {
+	background-image: linear-gradient(90deg, #60BFF9, #2349E4, #60BFF9);
+	background-size: 200%;
+	background-position: 100%;
+	transition: background-position 0.2s ease-out;
+}
+
+#installer:hover {
+	background-position: 0%;
+}
+
+#sileo {
+	background-image: linear-gradient(90deg, #70DDCE, #4BA4AA, #70DDCE);
+	background-size: 200%;
+	background-position: 100%;
+	transition: background-position 0.2s ease-out;
+}
+
+#sileo:hover {
+	background-position: 0%;
+}
+
+#zebra {
+	background-image: linear-gradient(90deg, #E2E8EC, #2A2F33, #E2E8EC);
+	background-size: 200%;
+	background-position: 100%;
+	transition: background-position 0.2s ease-out;
+}
+
+#zebra:hover {
+	background-position: 0%;
+}
+
+#centerbox {
+	display: flex;
+	justify-content: center;
+}
+
+#centerbox button {
+	margin-left: 10px;
+}
+
+#title {
+	display: flex;
+	justify-content: center;
+}
+
+#title img {
+	margin-right: 20px;
+	filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+}
+
+#repos {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.repo-card {
+	display: grid;
+	padding: 10px;
+	width: 100%;
+	background-color: rgb(200, 200, 200);
+	color: black;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	grid-template-areas:
+		"a b c h"
+		"a d d ."
+		"a e e ."
+		"f f f f"
+		"g g g g";
+	border-radius: 10px;
+	filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+}
+
+.info-card {
+	background-color: transparent;
+	width: auto;
+	text-align: left;
+	margin: 0;
+}
+
+#name {
+	grid-area: b;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 20px;
+}
+
+#icon {
+	grid-area: a;
+	border-radius: 5px;
+	margin-top: 3px;
+	margin-left: 3px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+img#icon {
+	filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
+}
+
+#version {
+	grid-area: c;
+	align-self: center;
+	font-size: 12px;
+	color: rgb(90, 90, 90);
+	font-style: italic;
+}
+
+#author {
+	grid-area: d;
+	font-size: 14px;
+	color: rgb(90, 90, 90);
+}
+
+#architecture {
+	grid-area: e;
+	font-size: 12px;
+}
+
+#architecture:before {
+	content: 'Supports: ';
+	color: green;
+	font-weight: bold;
+}
+
+#description {
+	grid-area: f;
+	background-color: rgb(240, 240, 240);
+	padding: 5px;
+	margin-bottom: 0;
+	border-radius: 5px;
+}
+
+#section {
+	grid-area: h;
+}
+
+#extra-info {
+	grid-area: g;
+	font-size: 14px;
+}
+
+#extra-info p {
+	margin: 0;
+	padding-bottom: 3px;
+}
+
+div#extra-info {
+	padding: 5px;
+	background-color: rgb(240, 240, 240);
+}
+
+#package:before {
+	content: 'Package Name: ';
+	font-style: normal;
+	font-weight: bold;
+}
+
+#package {
+	font-style: italic;
+}
+
+#maintainer:before {
+	content: 'Maintainter: ';
+	font-style: normal;
+	font-weight: bold;
+}
+
+#size:before {
+	content: 'Size: ';
+	font-style: normal;
+	font-weight: bold;
+}
+
+#md5sum {
+	font-size: 12px;
+	color: gray;
+	font-style: italic;
+}
+
+#md5sum:before {
+	content: 'MD5sum: ';
+}
+
+#sha256 {
+	font-size: 12px;
+	color: gray;
+	font-style: italic;
+}
+
+#sha256:before {
+	content: 'SHA256: ';
+}
+
+.footer {
+	position: fixed;
+	top: 1;
+	bottom: 0;
+}
