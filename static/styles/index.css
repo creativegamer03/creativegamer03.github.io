@@ -103,3 +103,10 @@ div.boot-img img {
 	width: min-content;
     height: min-content;
 }
+
+div.error {
+	display: flex;
+	flex-direction: column;
+	padding-left: 0.5rem;
+	padding-top: 1rem;
+}

@@ -1,6 +1,6 @@
 {
 	"minVersion": "0.1",
-	"headerImage": "https://raw.githubusercontent.com/uchks/repo.me/master/assets/packageicons/rainworldslugcatsleep",
+	"headerImage": "https://raw.githubusercontent.com/creativegamer03/creativegamer03.github.io/refs/heads/main/repo/assets/repo/packageicons/rainworldslugcatsleep.png",
 	"tintColor": "#22b5f4",
 	"tabs": [
 		{
@@ -21,7 +21,7 @@
 				},
 				{
 					"class": "DepictionMarkdownView",
-					"markdown": "## Rain World Slugcat Sleeping Respring Theme\nThe Rain World "Applying mods" loading spinner as a Respring Logo Theme!\nFelt it was fitting for it to be a respring theme_"
+					"markdown": "## Rain World Slugcat Sleeping Respring Theme\nThe Rain World \"Applying mods\" loading spinner as a Respring Logo Theme!\n_Felt it was fitting for it to be a respring theme_"
 				},
 				{
 					"class": "DepictionSeparatorView"

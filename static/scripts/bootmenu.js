@@ -38,15 +38,27 @@ document.addEventListener("keydown", (e) => {
     updateItem();
 });
 
-document.addEventListener("keydown", (e) => {
+document.addEventListener("keydown", async(e) => {
     if (e.key === "Enter") {
+        document.querySelector("div.main-ui").style.display = 'none';
+        document.querySelector("div.error").style.display = 'unset';
+
+        await new Promise(r => setTimeout(r, 500));
+
         const selectedItem = document.querySelectorAll("div.menu-table tbody.the-stuff tr:not(.pad)")[currentIndex];
         window.location.href = linkDict[selectedItem.id];
     }
 });
 
 document.querySelectorAll("div.menu-table tbody.the-stuff tr:not(.pad)").forEach(
-    (v) => v.addEventListener("click", () => window.location.href = linkDict[v.id])
+    (v) => v.addEventListener("click", async(e) => {
+        document.querySelector("div.main-ui").style.display = 'none';
+        document.querySelector("div.error").style.display = 'unset';
+
+        await new Promise(r => setTimeout(r, 500));
+
+        window.location.href = linkDict[v.id];
+    })
 );
 
 document.querySelectorAll("div.menu-table tbody.the-stuff tr:not(.pad)").forEach(

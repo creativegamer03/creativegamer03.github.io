@@ -104,9 +104,13 @@ document.querySelectorAll("li.link-text").forEach(
     (v) => v.addEventListener("click", () => window.location.href = linkDict[v.id])
 );
 
+document.querySelectorAll("div.header-tabs span").forEach(
+    (v, k) => v.addEventListener("click", () => {currentTab = k; currentIndex = 0; updateItem();})
+);
+
 document.querySelectorAll("li.link-text").forEach(
     (v) => v.addEventListener("mouseenter", function(){
-        const options = document.querySelectorAll("li.link-text");
+        const options = document.querySelectorAll(`div#${tabLabels[currentTab]} li.link-text`);
 
         for (i = 0; i < options.length; i++)
         {
