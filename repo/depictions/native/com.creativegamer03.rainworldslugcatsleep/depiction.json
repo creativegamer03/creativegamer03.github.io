@@ -1,6 +1,6 @@
 {
 	"minVersion": "0.1",
-	"headerImage": "https://raw.githubusercontent.com/creativegamer03/creativegamer03.github.io/refs/heads/main/repo/assets/repo/packageicons/rainworldslugcatsleep.png",
+	"headerImage": "https://raw.githubusercontent.com/creativegamer03/creativegamer03.github.io/refs/heads/main/repo/assets/repo/PackageIcons/rainworldslugsleep.png",
 	"tintColor": "#22b5f4",
 	"tabs": [
 		{
@@ -9,12 +9,8 @@
 				{
 					"screenshots": [
 						{
-							"accessibilityText": "Snowboard",
-							"url": "https://creativegamer03.github.io/repo/depictions/web/com.creativegamer03.fallingbreadtheme/screenshots/snowboard.png"
-						},
-						{
 							"accessibilityText": "Demonstration",
-							"url": "https://creativegamer03.github.io/repo/depictions/web/com.creativegamer03.fallingbreadtheme/screenshots/demo.gif"
+							"url": "https://creativegamer03.github.io/repo/depictions/web/com.creativegamer03.rainworldslugsleep/screenshots/demo.gif"
 						}
 					],
 					"class": "DepictionScreenshotsView"
